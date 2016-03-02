@@ -1,6 +1,6 @@
 {
-  "name": "golpora",
-  "description": "golpo streaming site",
+  "name": "v1",
+  "description": "",
   "main": "",
   "moduleType": [],
   "license": "MIT",
@@ -12,8 +12,10 @@
     "test",
     "tests"
   ],
+  "devDependencies": {
+    "angular-material": "^1.0.6"
+  },
   "dependencies": {
-    "jquery": "^2.2.0",
-    "bootstrap": "^3.3.6"
+    "angular-route": "^1.5.0"
   }
 }

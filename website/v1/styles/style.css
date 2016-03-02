@@ -1,0 +1,74 @@
+@import url('player.css');
+@import url('header.css');
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #eeeeee;
+}
+
+.container{
+	display: block;
+}
+.card{
+	width: 175px;
+	float: left;
+}
+
+md-card md-card-content{
+	padding: 0;
+}
+
+md-card-content > p{
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 0px;
+}
+
+.track-img{
+	width: 100%;
+	border-bottom: 1px solid #e3e3e3;
+	height: 175px;
+}
+.track-img > img{
+	width: inherit;
+	height: inherit;
+}
+
+md-card-content > .title{
+	text-align: center;
+	margin-top: 10px;
+}
+
+md-card-content > .author{
+	text-align: center;
+	font-size: 0.7em;
+	margin-top: 6px;
+}
+
+.main-container{
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 1280px;
+	margin: auto;
+	padding: 0;
+	background-color: #e2e2e2;
+}
+
+footer.footer{
+	margin-top: 50px;
+	width: 100%;
+	height: 150px;
+	background: #C0C0C0;
+}
+
+.track-container{
+	width: 780px;
+	margin: auto;
+	overflow: hidden;
+	padding-top: 65px;
+
+	border: 1px solid black;
+}
