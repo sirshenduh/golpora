@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*--------------END OF RESET-------------*/
+
+
+/*----UTILITY-----*/
+.nofloat{clear:both;}
+
+a:link {color:#f5f5f5; text-decoration:none; padding:10px 15px; font-size:14px;}
+a:visited {color:#f5f5f5;}
+a:hover {color:#0CF;}
+a:active {color:f5f5f5;}
+
+/*SIDE LINKS*/
+#sidelinks{width:50px; height:150px; padding:10px; background-color:#09C; border-radius:0px 10px 10px 0px;
+position:fixed; top:250px; left:-40px; transition:left .5s;}
+
+#sidelinks:hover{background-color:#9C6; left:0px;}
+
+
+#sidelinks a:link {color:#f5f5f5; text-decoration:none; margin:6px 0px; padding:10px 10px; font-size:14px;}
+#sidelinks a:visited {color:#f5f5f5;}
+#sidelinks a:hover {color:#033;}
+#sidelinks a:active {color:f5f5f5;}
+
+
+/*----STRUCTURE-----*/
+body{background-image:url(images/page-back.jpg); background-attachment:fixed;}
+
+#wrapper {width:1000px; height:auto; margin:auto; background-color:#fff;}
+	#topnavcont{width:980px; height:94px; padding:10px; background-color:#4a60d5;}
+		#logocont{float:left; padding-left:50px; width:210px;}
+		#mainnav{ float:right; width:600px;}
+			#usernav, #sitenav{margin:10px 0px;}
+				#sitenav ul li, #usernav ul li{float:left; width:120px;}			
+	
+	#slider{width:1000px; height:450px; background-image:url(images/slider-01.jpg);}
+	#offer{width:1000px; height:430px; background-color:#063;}
+	#hotdeals{width:1000px; height:313px; background-color:#999;}
+		#dealone{width:500px; height:inherit; float:left; background-image:url(images/left-deal.jpg);}
+		#dealtwo{width:500px; height:inherit; float:right; background-image:url(images/right-deal.jpg);}
+			.dealtitle{text-align:right; margin:30px 25px 0px 0px; font-family:Verdana, Geneva, sans-serif; font-size:28px; color:#ebebeb;}
+			.dealdetails{float:right; width:90px; height:25px; padding-top:14px; margin-top:200px; margin-right:25px; background-color:#051f34; color:#ebebeb; font-family:Arial, Helvetica, sans-serif; font-size:11px; font-weight:600; text-align:center;}
+	
+	#qualitycheck{padding:40px; height:92px; width:auto;}
+		.qaelement{width:180px; float:left; margin-right:10px;}
+			.qagraphics{float:left;}
+			.qatext{float:right; margin-top:30px; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size:14px; color:#b3b3b3;}
+			
+	#products{width:1000px; height:280px;}
+		#hoody, #backpack{height:280px; width:280px; float:left;}
+		/*#backpack img{border-radius:140px;}*/
+		#social{width:440px; height:280px; float:right; background-color:red;}
+			#tweet{width:440px; height:100px; background-color:#71bacd;}
+				.sociallinks{width:220px; height:90px; float:left; background-color:blue; text-align:center;}
+				
+	#hotlinks{width:1000px; height:350px; padding:50px;}
+		.hotlinkscont{width:250px; height:250px; margin:0px 25px; float:left; border-radius:125px;  background-color:#727274;}
+			.linklist{width:100px; margin:0 auto; margin-top:40px;}
+			.linklist ul li{display:block;}
+			.linkheads{color:#fff; font-weight:bold;}
+			.linklist a:link {color:#f5f5f5; text-decoration:none; padding:10px 0px; font-size:14px;}
+			.linklist a:hover{color:#a62828;}
+			
+#mainfooter{width:1000px; height:350px; background-color:#626164; background-image:url(images/footer-back.jpg); background-repeat:no-repeat; background-position:bottom right;}
+
+
+	#about{width:1000px; height:auto; background-color:#fff;}
+		#about-img{float:left; width:500px; padding:25px;}
+		#aboutdetails{float:right; width:400px; padding:25px; text-align:justify; line-height:24px; font-family:Georgia, "Times New Roman", Times, serif;}
+		.firstchar{font-size:24px;}
