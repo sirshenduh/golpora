@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dropdown</title>
+  <link rel="stylesheet" href="dropdown.css">
+</head>
+<body>
+  <div class="nav">
+    <ul class="nav-links" id="big">
+      <li class="main-link">
+        1
+        <ul class="list">
+          <li class="links">1
+
+            <!-- <ul class="list1">
+              <li class="links1">1</li>
+              <li class="links1">1</li>
+              <li class="links1">1</li>
+            </ul> -->
+          </li>
+
+          <li class="links">j</li>
+          <li class="links">j</li>
+        </ul>
+      </li>
+
+
+
+      <li class="main-link">2</li>
+      <li class="main-link">3</li>
+      <li class="main-link">4</li>
+    </ul>
+    
+    <div id='berger'>Hamberger</div>
+    <ul id="small" class='hide'>
+      <li class='link'>1</li>
+      <li class='link'>2</li>
+      <li class='link'>3</li>
+      <li class='link'>4</li>
+    </ul>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script>
+  jQuery(document).ready(function($) {
+    $('#berger').click(function (e) {
+      e.preventDefault();
+      $('#small').toggleClass('hide');
+    });
+  });
+</script>
+</html>

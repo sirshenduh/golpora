@@ -1,0 +1,128 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+.nav{
+	height: 60px;
+	width: 100%;
+	background: crimson;
+}
+
+ul.nav-links{
+	margin: 0;
+	padding: 0;
+}
+
+li.main-link {
+	float: left;
+	list-style: none;
+	width: 25%;
+	line-height: 60px;
+	text-align: center;
+	font-size: 1.3em;
+	font-family: Helvetica;
+}
+
+li.main-link:hover {
+	background: #ED7575;
+	cursor: pointer;
+	height: 60px;
+}
+
+.list{
+	position: relative;
+	display: none;
+	margin: 0;
+	padding: 0;
+	padding: 10px 0;
+	background: #ED2E5F;
+}
+
+.list .links {
+	background: #ED2E5F;
+	position: relative;
+}
+
+.list .links:hover{
+	background-color: #F29A9A;
+}
+
+li.main-link:hover > .list {
+	display: block;
+}
+
+.list1{
+	position: absolute;
+	display: none;
+	margin: 0;
+	padding: 0;
+	padding: 10px 0;
+	background: #ED2E5F;
+	width: 100%;
+	left: 100%;
+	top: 0;
+}
+
+.list1 .links1 {
+	background: #ED2E5F;
+	list-style-type: none;
+}
+
+.list1 .links1:hover{
+	background-color: #F29A9A;
+}
+li.links:hover > .list1 {
+	display: block;
+}
+
+#small{
+	padding: 0;
+	margin: 0;
+	position: relative;
+	top: 100%;
+}
+
+#small.hide{
+	display: none;
+}
+#small li{
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	background: #DD6C6C;
+}
+
+#berger{
+	height: 60px;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	right: 0%;
+	line-height: 60px;
+	padding: 0 20px;
+	color: white;
+	font-size: 2em;
+	-webkit-user-select: none;
+}
+
+#berger:hover{
+	cursor: pointer;
+}
+
+/* < 768px */
+@media screen and (max-width: 768px) {
+	#big{
+		display: none;
+	}
+}
+/* >= 768px */
+@media screen and (min-width: 768px) {
+	#small{
+		display: none;
+	}
+	#berger{
+		display: none;
+	}
+}
